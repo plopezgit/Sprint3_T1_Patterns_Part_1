@@ -11,6 +11,6 @@ public class Request {
 	
 	@Override
 	public String toString() {
-			return "Request Key: " + key + "|";
+			return key;
 		}
 }

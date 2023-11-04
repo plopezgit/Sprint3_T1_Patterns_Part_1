@@ -19,20 +19,20 @@ public class Undo {
 		return undo;
 	}
 	
-	public static List<Request> storeRequest (Request request) {
-		requestList.add(request);
+	public static List<Request> doRequest (Request request) {
+		if (!request.toString().equalsIgnoreCase("#z")) {
+			requestList.add(request);
+		}
 		return requestList;
 	}
 	
-	public static List<Request> removeRequest () {
+	public static List<Request> unDoRequest () {
 		requestList.remove(requestList.size()-1);
 		return requestList;
 	}
 	
-	public static void getRequests () {
-		for (Request req : requestList) {
-			System.out.println(req);
-		}
+	public static void getRequestsHistory () {
+		requestList.stream().forEach(System.out::println);
 	}
 	
 }
