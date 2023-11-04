@@ -5,6 +5,9 @@ _Description:_
 
 In this practice we will learn to identify and build programs using design patterns. The use of patterns is fundamental in the construction of extensible and reusable software. The Java language, as well as all software frameworks, are made according to the most important software patterns.
 
+>It is a common misconception that the process of learning primarily consists of memorizing new information. To make the process of learning much more effective, you need to treat it as building new associations to the concepts that you already know. Essentially, it would be more about expanding what you already know, and then, once you internalize the knew knowledge, expanding it further.
+>>https://scientificprogrammer.net/2020/01/30/an-easy-way-to-learn-design-patterns-in-software-development/
+
 _Targets:_ Learn to identify and handle software construction patterns.
 
 
