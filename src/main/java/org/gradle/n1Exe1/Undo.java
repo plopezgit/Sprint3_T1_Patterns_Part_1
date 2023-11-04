@@ -1,12 +1,10 @@
 package org.gradle.n1Exe1;
 
-import org.gradle.n1Exe1.*;
 import java.util.*;
 
 public class Undo {
 	
 	private static Undo undo;
-	private Request request;
 	private static List<Request> requestList = new ArrayList<>();
 	
 	private Undo () {	
