@@ -2,6 +2,7 @@ package org.gradle.n1Exe1;
 
 public class App {
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		
 		Undo undo = Undo.getInstance();
