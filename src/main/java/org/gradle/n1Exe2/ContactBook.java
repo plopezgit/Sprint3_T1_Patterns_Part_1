@@ -1,4 +1,4 @@
-package org.gradle.n1Exe1;
+package org.gradle.n1Exe2;
 
 import java.util.*;
 
