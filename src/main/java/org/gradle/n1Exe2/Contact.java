@@ -8,18 +8,45 @@ public class Contact {
 	private int contactId;
 	private String contactName;
 	private String contactSurname;
-	private SpainAddress contactAddress;
-	private SpainPhoneNumber contactPhoneNumber;
+	
 	
 	public Contact (int contactId, String contactName, String contactSurname, SpainAddress contactAddress, SpainPhoneNumber contactPhoneNumber) {
 		
 		this.contactId = contactId;
 		this.contactName = contactName;
 		this.contactSurname = contactSurname;
-		this.contactAddress = contactAddress;
-		this.contactPhoneNumber = contactPhoneNumber;
-
+		
 	}
+	
+	public Contact (int contactId) {
+		
+		this.contactId = contactId;
+		
+	}
+
+	public String getContactName() {
+		return contactName;
+	}
+
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
+	}
+
+	public String getContactSurname() {
+		return contactSurname;
+	}
+
+	public void setContactSurname(String contactSurname) {
+		this.contactSurname = contactSurname;
+	}
+
+	public int getContactId() {
+		return contactId;
+	}
+	
+	
+	
+	
 	
 	
 	
