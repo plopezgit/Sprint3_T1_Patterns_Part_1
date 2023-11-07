@@ -7,7 +7,7 @@ import org.gradle.n1Exe2.interfaces.PhoneNumberInterface;
 public class AddressFactory implements AbstractFactory {
 
 	@Override
-	public AddressInterface getAdress(String country) {
+	public AddressInterface createAddress(String country) {
 		if (country.equalsIgnoreCase("spain")) {
 			return new SpainAddress();
 		}
@@ -15,7 +15,7 @@ public class AddressFactory implements AbstractFactory {
 	}
 
 	@Override
-	public PhoneNumberInterface getPhoneNumber(String country) {
+	public PhoneNumberInterface createPhoneNumber(String country) {
 		return null;
 	}
 }

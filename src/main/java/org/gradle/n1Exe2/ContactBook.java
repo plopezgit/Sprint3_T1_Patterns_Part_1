@@ -36,7 +36,11 @@ public class ContactBook {
 		return contactList;
 	}
 	
-	public static void getContactList () {
+	public static List<Contact> getContactList() {
+		return contactList;
+	}
+
+	public static void printContactList () {
 		contactList.stream().forEach(System.out::println);
 	}
 	
