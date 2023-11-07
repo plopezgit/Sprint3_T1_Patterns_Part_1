@@ -10,10 +10,12 @@ public class App {
 	public static void main(String[] args) {
 
 		ContactBook contactBook = ContactBook.getInstance();
+		
 		AbstractFactory phoneNumberFactory = GetterFactory.getFactory("phone number");
 		PhoneNumberInterface phoneNumber = phoneNumberFactory.createPhoneNumber("Spain");
 		AbstractFactory addressFactory = GetterFactory.getFactory("address");
 		AddressInterface address = addressFactory.createAddress("Spain");
+		
 		contactBook.getContactList()
 				.add(new Contact(1, Input.inputString("Name: "), Input.inputString("Surname: "),
 						phoneNumber.getPhoneNumber(Input.inputString("Phone number: ")),
