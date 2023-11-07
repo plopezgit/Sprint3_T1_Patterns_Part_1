@@ -1,4 +1,4 @@
-package org.gradle.n1Exe2.interfaces;
+package org.gradle.n2Exe1.interfaces;
 
 public interface AbstractFactory {
 	

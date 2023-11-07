@@ -1,8 +1,8 @@
-package org.gradle.n1Exe2;
+package org.gradle.n2Exe1;
 
-import org.gradle.n1Exe2.interfaces.AbstractFactory;
-import org.gradle.n1Exe2.interfaces.AddressInterface;
-import org.gradle.n1Exe2.interfaces.PhoneNumberInterface;
+import org.gradle.n2Exe1.interfaces.AbstractFactory;
+import org.gradle.n2Exe1.interfaces.AddressInterface;
+import org.gradle.n2Exe1.interfaces.PhoneNumberInterface;
 
 public class App {
 

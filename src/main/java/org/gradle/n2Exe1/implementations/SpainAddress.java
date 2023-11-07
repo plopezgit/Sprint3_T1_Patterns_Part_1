@@ -1,6 +1,6 @@
-package org.gradle.n1Exe2.implementations;
+package org.gradle.n2Exe1.implementations;
 
-import org.gradle.n1Exe2.interfaces.AddressInterface;
+import org.gradle.n2Exe1.interfaces.AddressInterface;
 
 public class SpainAddress implements AddressInterface {
 	

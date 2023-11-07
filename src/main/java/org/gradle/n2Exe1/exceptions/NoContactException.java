@@ -1,4 +1,4 @@
-package org.gradle.n1Exe1.exceptions;
+package org.gradle.n2Exe1.exceptions;
 
 public class NoContactException extends Exception {
 

@@ -1,7 +1,8 @@
-package org.gradle.n1Exe2;
+package org.gradle.n2Exe1;
 
 import java.util.*;
-import org.gradle.n1Exe1.exceptions.NoContactException;
+
+import org.gradle.n2Exe1.exceptions.NoContactException;
 
 public class ContactBook {
 	
