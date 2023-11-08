@@ -3,7 +3,7 @@ package org.gradle.n2Exe1.client;
 import org.gradle.n2Exe1.entity.Contact;
 import org.gradle.n2Exe1.entity.ContactBook;
 import org.gradle.n2Exe1.exceptions.NoContactException;
-import org.gradle.n2Exe1.factories.IternationalContactAbstractFactory;
+import org.gradle.n2Exe1.factories.IternationalFormatContactAbstractFactory;
 import org.gradle.n2Exe1.factories.AddressInterface;
 import org.gradle.n2Exe1.factories.GetterFactory;
 import org.gradle.n2Exe1.factories.PhoneNumberInterface;
@@ -16,9 +16,9 @@ public class App {
 
 		ContactBook contactBook = ContactBook.getInstance();
 
-		IternationalContactAbstractFactory phoneNumberFactory = GetterFactory.getFactory("phone number");
+		IternationalFormatContactAbstractFactory phoneNumberFactory = GetterFactory.getFactory("phone number");
 		PhoneNumberInterface phoneNumber = phoneNumberFactory.createPhoneNumber("Spain");
-		IternationalContactAbstractFactory addressFactory = GetterFactory.getFactory("address");
+		IternationalFormatContactAbstractFactory addressFactory = GetterFactory.getFactory("address");
 		AddressInterface address = addressFactory.createAddress("Spain");
 
 		contactBook.addContact(new Contact(1, Input.inputString("Name: "), Input.inputString("Surname: "),

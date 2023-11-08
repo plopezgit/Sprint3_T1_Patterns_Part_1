@@ -2,7 +2,7 @@ package org.gradle.n2Exe1.factories;
 
 public class GetterFactory {
 	
-	public static IternationalContactAbstractFactory getFactory (String type) {
+	public static IternationalFormatContactAbstractFactory getFactory (String type) {
 		
 		if (type.equalsIgnoreCase("address")) {
 			
