@@ -2,6 +2,7 @@ package org.gradle.n2Exe1.client;
 
 import org.gradle.n2Exe1.entity.Contact;
 import org.gradle.n2Exe1.entity.ContactBook;
+import org.gradle.n2Exe1.exceptions.NoContactException;
 import org.gradle.n2Exe1.factories.IternationalContactAbstractFactory;
 import org.gradle.n2Exe1.factories.AddressInterface;
 import org.gradle.n2Exe1.factories.GetterFactory;
@@ -20,14 +21,29 @@ public class App {
 		IternationalContactAbstractFactory addressFactory = GetterFactory.getFactory("address");
 		AddressInterface address = addressFactory.createAddress("Spain");
 		
-		contactBook.getContactList()
-				.add(new Contact(1, Input.inputString("Name: "), 
+		contactBook.addContact(new Contact(1, Input.inputString("Name: "), 
 									Input.inputString("Surname: "),
 									phoneNumber.formatPhoneNumber(Input.inputString("Phone number: ")),
 									address.formatAddress(Input.inputString("Street: "), Input.inputString("Number: "),
 																					Input.inputString("Postal code: "))));
+		contactBook.addContact(new Contact(2, Input.inputString("Name: "), 
+				Input.inputString("Surname: "),
+				phoneNumber.formatPhoneNumber(Input.inputString("Phone number: ")),
+				address.formatAddress(Input.inputString("Street: "), Input.inputString("Number: "),
+																Input.inputString("Postal code: "))));
+		
 		
 		contactBook.printContactList();
+		
+		try {
+			contactBook.removeContact(2);
+		} catch (NoContactException e) {
+			System.err.println("Contact does not exist");
+			e.printStackTrace();
+		}
+		
+		contactBook.printContactList();
+
 		
 		/*
 		 * - Level 2 Abstract Factory** Create a small manager of international phone
