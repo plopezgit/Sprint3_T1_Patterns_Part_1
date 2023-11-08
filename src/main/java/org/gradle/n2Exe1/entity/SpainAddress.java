@@ -11,7 +11,7 @@ public class SpainAddress implements AddressInterface {
 	}
 
 	@Override
-	public String getAddress(String street, String number, String postalCode) {
+	public String formatAddress(String street, String number, String postalCode) {
 		return street + ", " + number + " " + postalCode + ", " + country;
 		
 	}

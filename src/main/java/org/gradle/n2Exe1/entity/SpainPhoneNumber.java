@@ -11,7 +11,7 @@ public class SpainPhoneNumber implements PhoneNumberInterface {
 	}
 
 	@Override
-	public String getPhoneNumber(String number) {
+	public String formatPhoneNumber(String number) {
 		return prefix + number;
 	}
 

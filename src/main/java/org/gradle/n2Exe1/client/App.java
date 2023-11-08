@@ -23,8 +23,8 @@ public class App {
 		contactBook.getContactList()
 				.add(new Contact(1, Input.inputString("Name: "), 
 									Input.inputString("Surname: "),
-									phoneNumber.getPhoneNumber(Input.inputString("Phone number: ")),
-									address.getAddress(Input.inputString("Street: "), Input.inputString("Number: "),
+									phoneNumber.formatPhoneNumber(Input.inputString("Phone number: ")),
+									address.formatAddress(Input.inputString("Street: "), Input.inputString("Number: "),
 																					Input.inputString("Postal code: "))));
 		
 		contactBook.printContactList();
