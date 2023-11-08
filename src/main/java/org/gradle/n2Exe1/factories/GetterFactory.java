@@ -1,8 +1,4 @@
-package org.gradle.n2Exe1;
-
-import org.gradle.n2Exe1.implementations.AddressFactory;
-import org.gradle.n2Exe1.implementations.PhoneNumberFactory;
-import org.gradle.n2Exe1.interfaces.AbstractFactory;
+package org.gradle.n2Exe1.factories;
 
 public class GetterFactory {
 	

@@ -1,4 +1,4 @@
-package org.gradle.n2Exe1;
+package org.gradle.n2Exe1.utils;
 
 import java.util.Scanner;
 

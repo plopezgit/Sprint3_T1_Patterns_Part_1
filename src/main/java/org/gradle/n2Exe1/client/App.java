@@ -1,8 +1,12 @@
-package org.gradle.n2Exe1;
+package org.gradle.n2Exe1.client;
 
-import org.gradle.n2Exe1.interfaces.AbstractFactory;
-import org.gradle.n2Exe1.interfaces.AddressInterface;
-import org.gradle.n2Exe1.interfaces.PhoneNumberInterface;
+import org.gradle.n2Exe1.entity.Contact;
+import org.gradle.n2Exe1.entity.ContactBook;
+import org.gradle.n2Exe1.factories.AbstractFactory;
+import org.gradle.n2Exe1.factories.AddressInterface;
+import org.gradle.n2Exe1.factories.GetterFactory;
+import org.gradle.n2Exe1.factories.PhoneNumberInterface;
+import org.gradle.n2Exe1.utils.Input;
 
 public class App {
 
@@ -17,10 +21,11 @@ public class App {
 		AddressInterface address = addressFactory.createAddress("Spain");
 		
 		contactBook.getContactList()
-				.add(new Contact(1, Input.inputString("Name: "), Input.inputString("Surname: "),
-						phoneNumber.getPhoneNumber(Input.inputString("Phone number: ")),
-						address.getAddress(Input.inputString("Street: "), Input.inputString("Number: "),
-								Input.inputString("Postal code: "))));
+				.add(new Contact(1, Input.inputString("Name: "), 
+									Input.inputString("Surname: "),
+									phoneNumber.getPhoneNumber(Input.inputString("Phone number: ")),
+									address.getAddress(Input.inputString("Street: "), Input.inputString("Number: "),
+																					Input.inputString("Postal code: "))));
 		
 		contactBook.printContactList();
 		

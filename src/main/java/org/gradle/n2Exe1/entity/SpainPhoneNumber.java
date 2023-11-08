@@ -1,6 +1,6 @@
-package org.gradle.n2Exe1.implementations;
+package org.gradle.n2Exe1.entity;
 
-import org.gradle.n2Exe1.interfaces.PhoneNumberInterface;
+import org.gradle.n2Exe1.factories.PhoneNumberInterface;
 
 public class SpainPhoneNumber implements PhoneNumberInterface {
 	
