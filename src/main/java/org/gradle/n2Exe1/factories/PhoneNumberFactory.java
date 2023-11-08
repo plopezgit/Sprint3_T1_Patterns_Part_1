@@ -2,7 +2,7 @@ package org.gradle.n2Exe1.factories;
 
 import org.gradle.n2Exe1.entity.SpainPhoneNumber;
 
-public class PhoneNumberFactory implements AbstractFactory {
+public class PhoneNumberFactory implements IternationalContactAbstractFactory {
 
 	@Override
 	public PhoneNumberInterface createPhoneNumber(String country) {
